@@ -1,12 +1,12 @@
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../../styles/global';
-import theme from '../../styles/theme';
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyles } from '../../styles/global'
+import theme from '../../styles/theme'
 
-import * as S from './styles';
+import * as S from './styles'
 
-function App() {
+function App () {
   return (
-    <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
       <S.Wrapper>
         <div>
           <h1>Vite Boilerplate</h1>
@@ -16,7 +16,7 @@ function App() {
 
       <GlobalStyles />
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

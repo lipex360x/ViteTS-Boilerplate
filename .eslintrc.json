@@ -5,6 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
+        "plugin:prettier/recommended",
         "standard"
     ],
     "parser": "@typescript-eslint/parser",
@@ -20,6 +21,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-      "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "space-before-function-paren": "off"
     }
 }

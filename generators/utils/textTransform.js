@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-var-requires */
-
+/* eslint-disable */
 const crypto = require('crypto')
 
 const textTransform = {

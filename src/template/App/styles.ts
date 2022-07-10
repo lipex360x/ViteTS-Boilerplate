@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.section`
   ${({ theme }) => css`
@@ -8,16 +8,16 @@ export const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     color: ${theme.color.lightGray};
-    
+
     div {
       text-align: center;
       h1 {
         font-size: ${theme.font.size.xxlarge};
       }
-      
+
       p {
-        font-size: ${theme.font.size.large}
+        font-size: ${theme.font.size.large};
       }
     }
   `}
-`;
+`

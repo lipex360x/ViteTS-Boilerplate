@@ -23,7 +23,7 @@
 
 #### :zap: Introduction
 
-This is a boilerplate for React Project
+This is a boilerplate for React Project using Atomic Design with generator
 
 ---
 

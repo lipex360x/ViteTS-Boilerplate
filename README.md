@@ -2,8 +2,9 @@
 <p align="center">React + Typescript Boilerplate with Vite</p>
 
 ---
-
-![](https://github.com/lipex360x/ViteTS-Boilerplate/blob/master/assets/screen.png)
+<p align="center">
+  <img src="https://github.com/lipex360x/ViteTS-Boilerplate/blob/main/assets/screen.png" />
+</p>
 
 ---
 
@@ -59,3 +60,5 @@ Check more details to start this project in the back-end and front-end folders
 ```
 
 ---
+
+:point_up_2: [Go to Content Index](#bookmark_tabs-content-index)

@@ -45,7 +45,7 @@ This is a boilerplate for React Project
 
 #### :zap: Generator
 
-- Run: `yarn gen` or `npm run gen` on terminal
+- Run: `yarn gen` or `npm run gen` in terminal
 
 - Follow the instructions
 

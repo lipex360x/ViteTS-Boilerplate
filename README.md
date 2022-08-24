@@ -2,6 +2,7 @@
 <p align="center">React + Typescript Boilerplate with Vite</p>
 
 ---
+
 <p align="center">
   <img src="https://github.com/lipex360x/ViteTS-Boilerplate/blob/main/assets/screen.png" />
 </p>
@@ -12,53 +13,57 @@
 
 - [Introduction](#zap-introduction)
 
-- [Setup](#zap-setup)
+- [Startup](#zap-startup)
 
-- [Backend Technologies](#zap-backend-technologies)
+- [Generate Modules/Pages](#zap-generator)
 
-- [Frontend Technologies](#zap-frontend-technologies)
+- [Technologies](#zap-technologies)
 
 ---
 
 #### :zap: Introduction
 
-This is a code repository for the Proffy Project.
-
-Your Online Study Platform
+This is a boilerplate for React Project
 
 ---
 
-#### :zap: Setup
+#### :zap: Startup
 
-Check more details to start this project in the back-end and front-end folders
+- Start project with this Templante
 
-:pushpin: Tips: for easier navigation by gihub, consider installing the [Octotree](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc) plugin
+- Install dependencies with `yarn` or `npm install`
 
----
+- run `yarn dev` or `npm run dev`
 
-#### :zap: Backend Technologies
+- Configure **Theme Styles** in `src/styles/constants`
 
-```
-  Express
-  Typescript
-  TypeORM
-  TDD with JEST
-  DDD with SOLID
-  Validation with Celebrate
-```
+- Configure **Global Styles** in `src/styles/global.ts`
+
+- Configure **Theme** in `src/styles/themes/default.ts`
 
 ---
 
-#### :zap: Frontend Technologies
+#### :zap: Generator
+
+- Run: `yarn gen` or `npm run gen` on terminal
+
+- Follow the instructions
+
+---
+
+#### :zap: Technologies
 
 ```
  ReactJS
  Styled Components
- Leaflet Map
- React Dropzone
- Axios
+ Styled Media Query
+ Plop
 ```
 
 ---
 
 :point_up_2: [Go to Content Index](#bookmark_tabs-content-index)
+
+---
+
+:pushpin: Tips: for easier navigation by github, consider installing the [Octotree](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc) plugin

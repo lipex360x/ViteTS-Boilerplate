@@ -25,18 +25,26 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   [disabled] {
-    opacity: 0.6;
+    opacity: 0.7;
     cursor: not-allowed
   }
 
   ${({ theme }) => css`
-    html {
-      font-size: 62.5%;
-      font-family: ${theme.font.family};
+    :focus {
+      outline: 0;
+      box-shadow: 0 0 0 2px ${theme.color['gray-600']};
     }
 
     body {
-      background: ${theme.color.mainBg};
+      color: ${theme.color.white};
+      background: ${theme.color.black};
+    }
+
+    body,
+    input,
+    textarea,
+    button {
+      font-family: ${theme.font.family};
     }
   `}
 `

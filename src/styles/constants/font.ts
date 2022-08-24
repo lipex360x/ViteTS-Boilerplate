@@ -4,15 +4,15 @@ export default {
 
   light: 300,
   normal: 400,
-  bold: 600,
+  bold: 700,
 
   size: {
-    xsmall: '1.2rem',
-    small: '1.4rem',
-    medium: '1.6rem',
-    large: '1.8rem',
-    xlarge: '2.0rem',
-    xxlarge: '2.8rem',
-    huge: '5.2rem'
-  }
+    xxsmall: '0.5rem',
+    xsmall: '0.75rem',
+    small: '0.875rem',
+    medium: '1rem',
+    large: '1.125rem',
+    xlarge: '1.75rem',
+    huge: '3.25rem',
+  },
 } as const

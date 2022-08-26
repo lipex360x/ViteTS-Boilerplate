@@ -35,6 +35,10 @@ This is a boilerplate for React Project using Atomic Design with generator
 
 - run `yarn dev` or `npm run dev`
 
+- Configure **Project Name** in `./package.json`
+
+- Configure **Project Title in** `./index.html`
+
 - Configure **Theme Styles** in `src/styles/constants`
 
 - Configure **Global Styles** in `src/styles/global.ts`

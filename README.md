@@ -15,6 +15,8 @@
 
 - [Startup](#zap-startup)
 
+- [Changeble Points](#zap-changeble-points)
+
 - [Generate Modules/Pages](#zap-generator)
 
 - [Technologies](#zap-technologies)
@@ -34,6 +36,10 @@ This is a boilerplate for React Project using Atomic Design with generator
 - Install dependencies with `yarn` or `npm install`
 
 - run `yarn dev` or `npm run dev`
+
+---
+
+#### :zap: Changeble points
 
 - Configure **Project Name** in `./package.json`
 

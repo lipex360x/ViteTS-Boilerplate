@@ -45,6 +45,10 @@ This is a boilerplate for React Project using Atomic Design with generator
 
 - Configure **Theme** in `src/styles/themes/default.ts`
 
+- Change **README.md**
+
+- Change **Screen Example** in `./assets/screen.png`
+
 ---
 
 #### :zap: Generator

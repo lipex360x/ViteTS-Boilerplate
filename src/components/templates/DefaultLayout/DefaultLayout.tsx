@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom'
-import { Container } from '@/components/bosons/Container'
+import { ToastContainer } from '@/components/bosons/ToastContainer'
 
 const DefaultLayout = () => {
   return (
-    <Container>
+    <>
       <Outlet />
-    </Container>
+      <ToastContainer />
+    </>
   )
 }
 

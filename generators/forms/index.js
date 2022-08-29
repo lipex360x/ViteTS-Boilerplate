@@ -15,7 +15,7 @@ module.exports = {
     },
   ],
 
-  actions: () => {
+  actions: (data) => {
     const pathTemplate = "./forms/templates";
     const formPath = "../src/components/molecules/{{formName}}Form";
 
@@ -46,7 +46,7 @@ module.exports = {
     });
 
     // Message
-    const message = () => `Component {{ pascalCase name }} created`;
+    const message = () => `Form ${data.formName} created`;
     action.push(message);
 
     return action;

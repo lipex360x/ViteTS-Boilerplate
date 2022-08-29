@@ -45,7 +45,7 @@ module.exports = {
     });
 
     // Message
-    const message = () => `Component {{ pascalCase name }} created`;
+    const message = () => `Page ${data.pageName} created`;
     action.push(message);
 
     return action;

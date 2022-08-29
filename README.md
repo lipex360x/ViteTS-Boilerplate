@@ -1,4 +1,4 @@
-<h2 align="center">ViteTS Boilerplate</h2>
+<h2 align="center">React Boilerplate</h2>
 <p align="center">React + Typescript Boilerplate with Vite</p>
 
 ---
@@ -51,6 +51,8 @@ This is a boilerplate for React Project using Atomic Design with generator
 
 - Configure **Theme** in `src/styles/themes/default.ts`
 
+- Rename `.env.example` to `.env` and change API address
+
 - Change **README.md**
 
 - Change **Screen Example** in `./assets/screen.png`
@@ -69,8 +71,10 @@ This is a boilerplate for React Project using Atomic Design with generator
 
 ```
  ReactJS
+ Axios
  Styled Components
  Styled Media Query
+ React Hot Toast
  Plop
 ```
 

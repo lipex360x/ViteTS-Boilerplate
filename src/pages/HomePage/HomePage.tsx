@@ -1,12 +1,16 @@
-import { ThumbsUp } from 'phosphor-react'
+import { ArrowCounterClockwise } from 'phosphor-react'
 import { Button } from '@/components/atoms/Button'
 import { Logo } from '@/components/atoms/Logo'
 import toastService from '@/services/toast.service'
 import * as S from './styles'
+import { useZustandStore } from '@/store/zustandStore'
 
 export const HomePage = () => {
-  const handleClick = () => {
-    toastService.success('Hello Boilerplate')
+  const { count, increment, decrement, reset } = useZustandStore()
+
+  const handleReset = () => {
+    toastService.success('Count reseted')
+    reset()
   }
 
   return (
@@ -14,12 +18,19 @@ export const HomePage = () => {
       <Logo />
       <h1>React Boilerplate</h1>
 
+      <S.State>
+        <Button onClick={() => decrement()}>-</Button>
+        <span>{count}</span>
+        <Button onClick={() => increment()}>+</Button>
+      </S.State>
+
       <Button
-        icon={<ThumbsUp size={24} />}
-        onClick={handleClick}
+        icon={<ArrowCounterClockwise size={24} />}
+        onClick={handleReset}
       >
-        Send Hello
+        Reset
       </Button>
+
     </S.Wrapper>
   )
 }

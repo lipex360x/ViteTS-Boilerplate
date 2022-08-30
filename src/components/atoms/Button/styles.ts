@@ -19,10 +19,10 @@ const wrapperModifiers = {
   `,
 
   default: (theme: DefaultTheme) => css`
-    background: ${theme.color['gray-600']};
+    background: ${theme.color['gray-400']};
 
     &:not(:disabled):hover {
-      background: ${theme.color['gray-700']};
+      background: ${theme.color['gray-500']};
     }
   `,
 

@@ -51,7 +51,7 @@ This is a boilerplate for React Project using Atomic Design with generator
 
 - Configure **Theme** in `src/styles/themes/default.ts`
 
-- Rename `.env.example` to `.env` and change API address
+- Rename `.env.example` to `.env` and change API address (if necessary)
 
 - Change **README.md**
 
@@ -70,11 +70,14 @@ This is a boilerplate for React Project using Atomic Design with generator
 #### :zap: Technologies
 
 ```
- ReactJS
  Axios
+ Immer
+ React Hook Form
+ React Hot Toast
  Styled Components
  Styled Media Query
- React Hot Toast
+ Zod
+ Zustand
  Plop
 ```
 

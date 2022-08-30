@@ -21,3 +21,10 @@ export const Wrapper = styled.div`
     }
   `}
 `
+
+export const State = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`

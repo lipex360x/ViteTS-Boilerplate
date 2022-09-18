@@ -21,6 +21,8 @@
 
 - [Technologies](#zap-technologies)
 
+- [Live Preview](https://react-gen-boilerplate.netlify.app/)
+
 ---
 
 #### :zap: Introduction

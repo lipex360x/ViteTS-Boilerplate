@@ -13,15 +13,20 @@ const loading = (content: string) => {
 }
 
 const dismiss = () => {
-  toast.dismiss();
+  toast.dismiss()
 }
 
-const promise = (promise: Promise<any>, content: string, success: string, error: string) => {
+const promise = (
+  promise: Promise<any>,
+  content: string,
+  success: string,
+  error: string,
+) => {
   toast.promise(promise, {
     loading: content,
     success,
     error,
-  });
+  })
 }
 
 export default {
@@ -29,5 +34,5 @@ export default {
   error,
   loading,
   dismiss,
-  promise
+  promise,
 }

@@ -1,7 +1,24 @@
 {
   "extends": "@rocketseat/eslint-config/react",
+  "plugins": ["eslint-plugin-import-helpers"],
+
   "rules": {
     "no-undef": "off",
-    "prettier/prettier": "off"
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-non-null-assertion": "off",
+
+    "import-helpers/order-imports": ["error", {
+      "newlinesBetween": "never",
+      "groups": [
+        "/^react/",
+        "module",
+        "/^@/components/",
+        "/^@/services/",
+        "/^@/store/"
+      ]
+      // "alphabetize": { "order": "asc", "ignoreCase": true }
+    }]
+
   }
 }

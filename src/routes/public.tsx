@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
-import {DefaultLayout} from '@/components/templates/DefaultLayout'
 import { Home } from '@/pages/HomePage'
+import { DefaultLayout } from '@/components/templates/DefaultLayout'
 
 export const Public = () => {
   return (

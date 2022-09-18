@@ -1,24 +1,24 @@
-const localStorage = window.localStorage;
+const localStorage = window.localStorage
 
 export function setItem(key: string, item: string | object) {
-  const value = typeof item === 'object' ? JSON.stringify(item) : item;
-  return localStorage.setItem(key, value);
+  const value = typeof item === 'object' ? JSON.stringify(item) : item
+  return localStorage.setItem(key, value)
 }
 
 export function getItem(key: string) {
-  const value = localStorage.getItem(key);
+  const value = localStorage.getItem(key)
 
   if (!value) {
-    return;
+    return
   }
 
   try {
-    return JSON.parse(value);
+    return JSON.parse(value)
   } catch {
-    return value;
+    return value
   }
 }
 
 export function removeItem(key: string) {
-  return localStorage.removeItem(key);
+  return localStorage.removeItem(key)
 }

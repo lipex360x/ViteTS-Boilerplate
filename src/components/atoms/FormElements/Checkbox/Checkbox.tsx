@@ -35,7 +35,6 @@ export const Checkbox = ({
       checked={checked}
       value={value}
       {...props}
-    >
-    </S.Input>
+    />
   )
 }

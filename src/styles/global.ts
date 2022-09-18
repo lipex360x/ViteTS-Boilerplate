@@ -1,30 +1,13 @@
 import { css, createGlobalStyle } from 'styled-components'
 
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   ${({ theme }) => css`
-    body {
-      color: ${theme.color.white};
-      background: ${theme.color.black};
-    }
-
-    :focus {
-      outline: 0;
-      box-shadow: 0 0 0 2px ${theme.color['gray-600']};
-    }
-
-    body,
-    input,
-    textarea,
-    button {
-      font: 400 1rem ${theme.font.family};
-    }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 
       &::before,
       &::after {
@@ -32,20 +15,39 @@ export const GlobalStyles = createGlobalStyle`
       }
     }
 
-    html,
-    body {
-      height: 100%;
-    }
-
-    button {
-      cursor: pointer;
-      border: 0;
-      background: transparent;
+    :focus {
+      outline: 0;
+      box-shadow: 0 0 6px -2px ${theme.color.gray400};
     }
 
     [disabled] {
       opacity: 0.7;
       cursor: not-allowed;
     }
+
+    body,
+    input,
+    textarea,
+    button {
+      font: ${theme.font.normal} // weight
+        ${theme.font.size.medium} // size
+        ${theme.font.family}; // family
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    body {
+      font-family: 'Roboto';
+      font-size: ${theme.font.size.medium};
+      color: ${theme.color.black};
+    }
   `}
 `
+
+export default GlobalStyles

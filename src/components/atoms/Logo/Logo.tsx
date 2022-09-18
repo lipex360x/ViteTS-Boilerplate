@@ -1,9 +1,5 @@
-import * as S from './styles'
-
-import logoImg from '@/assets/logo.svg'
+import { React } from '@/components/atoms/Icons'
 
 export const Logo = () => {
-  return (
-    <S.Wrapper src={logoImg} />
-  )
+  return <React width={96} height={96} />
 }

@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { ToastContainer } from '@/components/bosons/ToastContainer'
 
-const DefaultLayout = () => {
+export const DefaultLayout = () => {
   return (
     <>
       <Outlet />
@@ -9,5 +9,3 @@ const DefaultLayout = () => {
     </>
   )
 }
-
-export default DefaultLayout

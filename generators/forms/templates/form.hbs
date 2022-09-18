@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { TextField } from '@/components/atoms/FormElements/TextField'
 import { Button } from '@/components/atoms/Button'
-import formSchema, { FormInputs } from './form.schema'
+import { TextField } from '@/components/atoms/FormElements/TextField'
+import { FormContainer } from '@/components/bosons/FormContainer'
 import toastService from '@/services/toast.service'
-
+import formSchema, { FormInputs } from './form.schema'
 import * as S from './styles'
 
 export const {{formName}}Form = () => {
@@ -12,9 +12,9 @@ export const {{formName}}Form = () => {
     register,
     handleSubmit,
     reset,
-    formState: { isSubmitting }
+    formState: { errors, isSubmitting },
   } = useForm<FormInputs>({
-    resolver: zodResolver(formSchema)
+    resolver: zodResolver(formSchema),
   })
 
   const submitForm = async (data: FormInputs) => {
@@ -22,25 +22,32 @@ export const {{formName}}Form = () => {
     await new Promise((resolve) => setTimeout(resolve, 1000))
 
     toastService.dismiss()
-    toastService.success(`enviado: ${data.name}`,)
+    toastService.success(`enviado: ${data.name}`)
 
     reset()
   }
 
   return (
     <S.Form onSubmit={handleSubmit(submitForm)}>
-      <TextField
-        placeholder='Type text'
-        required
-        {...register('name')}
-      />
+      <FormContainer>
+        <TextField
+          placeholder="Type name"
+          required
+          textError={errors.name?.message}
+          {...register('name')}
+        />
 
-      <Button
-        disabled={isSubmitting}
-        type='submit'
-      >
-        Salvar
-      </Button>
+        <TextField
+          placeholder="Type email"
+          required
+          textError={errors.email?.message}
+          {...register('email')}
+        />
+
+        <Button disabled={isSubmitting} type="submit" fullWidth>
+          Salvar
+        </Button>
+      </FormContainer>
     </S.Form>
   )
 }

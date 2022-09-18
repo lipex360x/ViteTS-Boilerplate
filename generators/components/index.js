@@ -30,7 +30,7 @@ module.exports = {
 
   actions: (data) => {
     const pathTemplate = "./components/templates";
-    const componentPath = `../src/components/{{type}}/{{componentName}}`;
+    const componentPath = "../src/components/{{type}}/{{componentName}}";
 
     const files = () => {
       const arrayFiles = [];

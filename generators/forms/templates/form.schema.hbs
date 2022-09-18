@@ -1,7 +1,8 @@
 import * as z from 'zod'
 
 const formSchema = z.object({
-  name: z.string()
+  name: z.string().trim().min(1, 'Campo não pode estar vazio'),
+  email: z.string().email(),
 })
 
 export default formSchema

@@ -1,22 +1,22 @@
 import { toast } from 'react-hot-toast'
 
-const success = (content: string) => {
+export const success = (content: string) => {
   return toast.success(content)
 }
 
-const error = (content: string) => {
+export const error = (content: string) => {
   return toast.error(content)
 }
 
-const loading = (content: string) => {
+export const loading = (content: string) => {
   return toast.loading(content)
 }
 
-const dismiss = () => {
+export const dismiss = () => {
   toast.dismiss()
 }
 
-const promise = (
+export const promise = (
   promise: Promise<any>,
   content: string,
   success: string,
@@ -27,12 +27,4 @@ const promise = (
     success,
     error,
   })
-}
-
-export default {
-  success,
-  error,
-  loading,
-  dismiss,
-  promise,
 }

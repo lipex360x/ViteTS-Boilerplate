@@ -1,7 +1,7 @@
 import { Button } from '@/components/atoms/Button'
 import { Minus, Plus, ReturnCircled } from '@/components/atoms/Icons'
 import { Logo } from '@/components/atoms/Logo/Logo'
-import toastService from '@/services/toast.service'
+import { toastService } from '@/services/'
 import { useZustand } from '@/store/useZustand'
 import * as S from './styles'
 

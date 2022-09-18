@@ -1,5 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
 import { Home } from '@/pages/HomePage'
+import { Routes, Route } from 'react-router-dom'
 import { DefaultLayout } from '@/components/templates/DefaultLayout'
 
 export const Public = () => {

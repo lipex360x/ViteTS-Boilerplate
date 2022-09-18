@@ -1,8 +1,8 @@
-import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
-import theme from '@/styles/theme'
+import { BrowserRouter } from 'react-router-dom'
 import { PublicRoutes } from '@/routes'
 import GlobalStyles from '@/styles/global'
+import theme from '@/styles/theme'
 
 export function App() {
   return (

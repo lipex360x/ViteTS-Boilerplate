@@ -1,14 +1,14 @@
 import { produce } from 'immer'
 import create from 'zustand'
 
-export type UseZustandProps = {
+export type ZustandStoreProps = {
   count: number
   increment: () => void
   decrement: () => void
   reset: () => void
 }
 
-export const useZustand = create<UseZustandProps>((set) => ({
+export const zustandStore = create<ZustandStoreProps>((set) => ({
   count: 0,
 
   increment: () =>

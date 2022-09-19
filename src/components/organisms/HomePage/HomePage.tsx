@@ -2,11 +2,12 @@ import { Button } from '@/components/atoms/Button'
 import { Minus, Plus, ReturnCircled } from '@/components/atoms/Icons'
 import { Logo } from '@/components/atoms/Logo/Logo'
 import { toastService } from '@/services/'
-import { useZustand } from '@/store/useZustand'
+import { zustandStore } from '@/store'
+
 import * as S from './styles'
 
 export const HomePage = () => {
-  const { count, increment, decrement, reset } = useZustand()
+  const { count, increment, decrement, reset } = zustandStore()
 
   const handleReset = () => {
     toastService.success('Store Count reseted')

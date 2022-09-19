@@ -9,17 +9,11 @@
     "@typescript-eslint/no-non-null-assertion": "off",
 
     "import-helpers/order-imports": ["error", {
-      "newlinesBetween": "never",
+      "newlinesBetween": "always",
       "groups": [
         "absolute",
         "module",
-        "/^react/",
-        "/^@/components/",
-        "/^@/constants/",
-        "/^@/services/",
-        "/^@/store/",
-        "/^@/routes/",
-        "/^@/styles/",
+        "/^@/",
         "index"
       ],
       "alphabetize": { "order": "asc", "ignoreCase": true }

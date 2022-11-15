@@ -4,6 +4,8 @@ export const Container = styled.div`
   ${({ theme }) => css`
     width: 100%;
     height: 60px;
-    background-color: #555;
+    padding: ${theme.spacing.lg};
+    display: flex;
+    justify-content: end;
   `}
 `

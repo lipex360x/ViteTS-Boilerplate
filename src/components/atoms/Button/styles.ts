@@ -34,7 +34,7 @@ const variants = {
     border-radius: 4px;
   `,
 
-  minimal: (theme: DefaultTheme) => css`
+  outlined: (theme: DefaultTheme) => css`
     background: none;
     color: ${theme.colors.blueAccent[300]};
     border: 1px solid ${theme.colors.blueAccent[300]};
@@ -44,6 +44,12 @@ const variants = {
       color: ${theme.colors.blueAccent[100]};
       background: ${theme.colors.blueAccent[800]};
     }
+  `,
+
+  minimal: (theme: DefaultTheme) => css`
+    background: none;
+    color: ${theme.colors.blueAccent[300]};
+    border: none;
   `,
 
   withIcon: (theme: DefaultTheme, position: 'left' | 'right') => css`

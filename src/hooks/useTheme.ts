@@ -7,7 +7,7 @@ import light from '@/styles/themes/light'
 interface UseThemeProviderProps {
   theme: typeof light | typeof dark
   defaultTheme: () => void
-  setTheme: () => void
+  swithTheme: () => void
 }
 
 export const useTheme = create<UseThemeProviderProps>((set) => ({
@@ -16,27 +16,27 @@ export const useTheme = create<UseThemeProviderProps>((set) => ({
     set((state) => {
       const getTheme = localStorageService.getItem('theme')
 
-      const swithTheme = !getTheme
+      const setTheme = !getTheme
         ? state.theme
         : getTheme === 'dark'
         ? dark
         : light
 
-      localStorageService.setItem('theme', swithTheme.title)
+      localStorageService.setItem('theme', setTheme.title)
 
-      return { theme: swithTheme }
+      return { theme: setTheme }
     })
   },
 
-  setTheme: () => {
+  swithTheme: () => {
     set(() => {
       const getTheme = localStorageService.getItem('theme')
 
-      const swithTheme = getTheme === 'dark' ? light : dark
+      const setTheme = getTheme === 'dark' ? light : dark
 
-      localStorageService.setItem('theme', swithTheme.title)
+      localStorageService.setItem('theme', setTheme.title)
 
-      return { theme: swithTheme }
+      return { theme: setTheme }
     })
   },
 }))

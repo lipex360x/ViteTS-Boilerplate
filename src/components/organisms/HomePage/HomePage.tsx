@@ -1,18 +1,16 @@
 import { Button } from '@/components/atoms/Button'
 import { Minus, Plus, ReturnCircled } from '@/components/atoms/Icons'
 import { Logo } from '@/components/atoms/Logo/Logo'
-import { useCount, useTheme } from '@/hooks'
+import { useCount } from '@/hooks'
 import { toastService } from '@/services/'
 
 import * as S from './styles'
 
 export const HomePage = () => {
   const { count, increment, decrement, reset } = useCount()
-  const { setTheme } = useTheme()
 
   const handleReset = () => {
     toastService.success('Count reseted')
-    setTheme()
     reset()
   }
 

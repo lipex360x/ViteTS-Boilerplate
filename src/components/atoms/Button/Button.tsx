@@ -6,7 +6,7 @@ type ButtonsTypes = ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonProps = {
   size?: 'small' | 'medium' | 'large'
-  variant?: 'default' | 'minimal'
+  variant?: 'default' | 'minimal' | 'outlined'
   fullWidth?: boolean
   icon?: JSX.Element
   iconPosition?: 'left' | 'right'

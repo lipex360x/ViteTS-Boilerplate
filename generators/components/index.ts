@@ -6,7 +6,7 @@ export default {
   prompts: [
     {
       type: 'list',
-      name: 'type',
+      name: 'componentType',
       message: 'Select a component type',
       choices: () => [
         { name: 'Boson', value: 'bosons' },
@@ -31,7 +31,7 @@ export default {
   actions: (data: any) => {
     const { pushFile } = generatorService()
     const pathTemplate = './components/templates'
-    const componentPath = (COMPONENT_PATH + data.componentName) as string
+    const componentPath = `${COMPONENT_PATH}/{{componentType}}/{{componentName}}`
 
     const files = () => {
       const arrayFiles: any[] = []
@@ -76,13 +76,13 @@ export default {
       action.push(createFile)
     })
 
-    const updateFile = {
-      type: 'append',
-      path: `${COMPONENT_PATH}index.ts`,
-      pattern: /components/gi,
-      template: "export * from './{{componentName}}'",
-    }
-    action.push(updateFile)
+    // const updateFile = {
+    //   type: 'append',
+    //   path: `${COMPONENT_PATH}index.ts`,
+    //   pattern: /components/gi,
+    //   template: "export * from './{{componentName}}'",
+    // }
+    // action.push(updateFile)
 
     return action
   },

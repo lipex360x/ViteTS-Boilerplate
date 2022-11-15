@@ -15,11 +15,6 @@ const GlobalStyles = createGlobalStyle`
       }
     }
 
-    :focus {
-      outline: 0;
-      box-shadow: 0 0 6px -2px ${theme.color.gray400};
-    }
-
     [disabled] {
       opacity: 0.7;
       cursor: not-allowed;
@@ -29,13 +24,10 @@ const GlobalStyles = createGlobalStyle`
     input,
     textarea,
     button {
-      font: ${theme.font.normal} // weight
-        ${theme.font.size.medium} // size
-        ${theme.font.family}; // family
-    }
-
-    html {
-      font-size: 62.5%;
+      font-family: ${theme.font.default};
+      font-size: ${theme.fontSize.base};
+      font-weight: ${theme.font.normal};
+      line-height: ${theme.lineHeight.base};
     }
 
     button {
@@ -43,9 +35,12 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-      font-family: 'Roboto';
-      font-size: ${theme.font.size.medium};
-      color: ${theme.color.black};
+      font-family: ${theme.font.default};
+      font-size: ${theme.fontSize.base};
+      font-weight: ${theme.font.normal};
+      line-height: ${theme.lineHeight.base};
+      background: ${theme.colors.primary[400]};
+      color: ${theme.colors.primary[100]};
     }
   `}
 `

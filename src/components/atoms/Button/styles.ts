@@ -28,29 +28,29 @@ const sizes = {
 
 const variants = {
   default: (theme: DefaultTheme) => css`
-    color: ${theme.color.gray700};
-    background: ${theme.color.gray200};
-    border: 1px solid ${theme.color.gray300};
-    border-radius: 0.6rem;
+    color: ${theme.colors.blueAccent[900]};
+    background: ${theme.colors.blueAccent[300]};
+    border: 1px solid ${theme.colors.blueAccent[300]};
+    border-radius: 4px;
   `,
 
   minimal: (theme: DefaultTheme) => css`
     background: none;
-    color: ${theme.color.gray300};
-    border: 1px solid ${theme.color.gray300};
+    color: ${theme.colors.blueAccent[300]};
+    border: 1px solid ${theme.colors.blueAccent[300]};
     transition: background, color ${theme.transition.fast};
 
     &:not(:disabled):hover {
-      color: ${theme.color.white};
-      background: ${theme.color.gray800};
+      color: ${theme.colors.blueAccent[100]};
+      background: ${theme.colors.blueAccent[800]};
     }
   `,
 
   withIcon: (theme: DefaultTheme, position: 'left' | 'right') => css`
     span {
       display: inline-block;
-      margin-left: ${position === 'left' && theme.spacings.xxsmall};
-      margin-right: ${position === 'right' && theme.spacings.xxsmall};
+      margin-left: ${position === 'left' && theme.spacing.xs};
+      margin-right: ${position === 'right' && theme.spacing.xs};
     }
   `,
 }
@@ -60,7 +60,7 @@ export const ButtonBase = styled.button`
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: ${theme.color.gray900};
+    color: ${theme.colors.blueAccent[900]};
   `}
 `
 

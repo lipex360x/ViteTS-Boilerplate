@@ -1,1 +1,2 @@
-export { useCount } from './useCount'
+export * from './useCount'
+export * from './useTheme'

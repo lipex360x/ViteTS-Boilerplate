@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "npx eslint src --ext .ts,.tsx --fix",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "gen": "yarn plop --plopfile generators/plopfile.js"
+    "gen": "npm run plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.7",

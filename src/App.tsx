@@ -1,13 +1,21 @@
+import { useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
+import { DefaultTheme, ThemeProvider } from 'styled-components'
 
+import { useTheme } from '@/hooks'
 import { PublicRoutes } from '@/routes'
 import GlobalStyles from '@/styles/global'
-import theme from '@/styles/theme'
 
 export function App() {
+  const { theme, defaultTheme } = useTheme()
+  const localTheme = theme as DefaultTheme
+
+  useEffect(() => {
+    defaultTheme()
+  }, [defaultTheme])
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={localTheme}>
       <BrowserRouter>
         <PublicRoutes />
       </BrowserRouter>

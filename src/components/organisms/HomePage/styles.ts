@@ -1,20 +1,26 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.div`
+export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
-    flex-direction: column;
     gap: 1rem;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
     justify-content: center;
-    font-size: ${theme.font.size.small};
+
+    margin-top: 60px;
+    height: 100%;
+
+    font-size: ${theme.fontSize.base};
 
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.size.medium};
+      font-size: ${theme.fontSize.base};
     `}
 
+    h1 {
+      color: ${theme.colors.blueAccent[300]};
+    }
     img {
       width: 48px;
       height: 48px;

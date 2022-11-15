@@ -10,10 +10,10 @@
     "lint": "npx eslint src --ext .ts,.tsx --fix",
     "typecheck": "tsc --project tsconfig.json --noEmit",
 
-    "plop": "plop --plopfile ./plop/plopfile.js",
     "preplopbuild": "rimraf plop/",
     "plopbuild": "tsup ./generators/plopfile.ts",
     "postplopbuild": "copyfiles -u 1 ./generators/**/*.hbs plop",
+    "plop": "plop --plopfile ./plop/plopfile.js",
     "gen": "npm run plopbuild && npm run plop "
   },
   "dependencies": {

@@ -39,8 +39,10 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${theme.fontSize.base};
       font-weight: ${theme.font.normal};
       line-height: ${theme.lineHeight.base};
-      background: ${theme.colors.primary[400]};
       color: ${theme.colors.primary[100]};
+
+      background-color: ${theme.colors.primary[400]};
+      transition: background-color ${theme.transition.fast};
     }
   `}
 `

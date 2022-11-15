@@ -9,10 +9,10 @@ export const Wrapper = styled.div`
     align-items: center;
     height: 100vh;
     justify-content: center;
-    font-size: ${theme.font.size.small};
+    font-size: ${theme.fontSize.xs};
 
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.size.medium}
+      font-size: ${theme.fontSize.base}
     `}
 
     img {

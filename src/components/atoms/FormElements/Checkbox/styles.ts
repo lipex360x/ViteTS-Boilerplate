@@ -14,13 +14,13 @@ export const Input = styled.input`
     position: relative;
     outline: none;
 
-    border: 2px solid ${theme.color.gray300};
+    border: 2px solid ${theme.colors.grey[300]};
 
     &:before {
       content: '';
       width: 6px;
       height: 9px;
-      border: 2px solid ${theme.color.success};
+      border: 2px solid ${theme.colors.greenAccent[300]};
       border-top: 0;
       border-left: 0;
       transform: rotate(45deg);
@@ -31,18 +31,18 @@ export const Input = styled.input`
     }
 
     &:hover {
-      border-color: ${theme.color.gray300};
+      border-color: ${theme.colors.grey[300]};
     }
 
     &:checked {
-      border-color: ${theme.color.success};
+      border-color: ${theme.colors.greenAccent[300]};
 
       &:before {
         opacity: 1;
       }
 
       &:hover {
-        border-color: ${theme.color.success};
+        border-color: ${theme.colors.greenAccent[300]};
       }
     }
   `}

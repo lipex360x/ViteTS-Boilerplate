@@ -10,16 +10,16 @@ export const Wrapper = styled.div<WrapperProps>`
     display: flex;
     flex-wrap: wrap;
     grid-column: span ${span};
-    background: ${theme.color.white};
+    background: ${theme.colors.white};
     padding: 0.5rem;
     position: relative;
 
-    border: 1px solid ${theme.color.gray200};
+    border: 1px solid ${theme.colors.grey[200]};
     border-radius: 6px;
 
     :focus-within {
       outline: 0;
-      box-shadow: 0 0 6px -2px ${theme.color.gray400};
+      box-shadow: 0 0 6px -2px ${theme.colors.grey[400]};
     }
 
     div {
@@ -28,7 +28,7 @@ export const Wrapper = styled.div<WrapperProps>`
       align-items: center;
       justify-content: center;
       span {
-        font-size: ${theme.font.size.xsmall};
+        font-size: ${theme.fontSize.xs};
         font-style: italic;
       }
     }
@@ -41,11 +41,11 @@ export const Input = styled.input`
     width: 100%;
     border: none;
     padding: 0.5rem;
-    background: ${theme.color.white};
-    color: ${theme.color.gray800};
+    background: ${theme.colors.white};
+    color: ${theme.colors.grey[800]};
 
     &::placeholder {
-      color: ${theme.color.gray400};
+      color: ${theme.colors.grey[400]};
     }
 
     :focus {
@@ -59,7 +59,7 @@ export const MessageError = styled.span`
     position: absolute;
     right: 1rem;
     bottom: 0;
-    font-size: ${theme.font.size.xsmall};
-    color: ${theme.color.danger};
+    font-size: ${theme.fontSize.xs};
+    color: ${theme.colors.redAccent[400]};
   `}
 `

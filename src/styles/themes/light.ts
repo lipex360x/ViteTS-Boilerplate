@@ -5,6 +5,8 @@ export default {
   ...tokens,
 
   colors: {
+    white: '#fff',
+    dark: '#000',
     grey: {
       100: '#141414',
       200: '#292929',

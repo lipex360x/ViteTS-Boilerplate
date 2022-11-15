@@ -1,15 +1,20 @@
 {
   "name": "react-boilerplate",
   "private": true,
-  "version": "0.0.0",
-  "type": "commonjs",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "npx eslint src --ext .ts,.tsx --fix",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "gen": "npm run plop --plopfile generators/plopfile.js"
+
+    "plop": "plop --plopfile ./plop/plopfile.js",
+    "preplopbuild": "rimraf plop/",
+    "plopbuild": "tsup ./generators/plopfile.ts",
+    "postplopbuild": "copyfiles -u 1 ./generators/**/*.hbs plop",
+    "gen": "npm run plopbuild && npm run plop "
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.7",
@@ -32,9 +37,12 @@
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^2.0.1",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.22.0",
     "eslint-plugin-import-helpers": "^1.2.1",
     "plop": "^3.1.1",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.5.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.7"
   }

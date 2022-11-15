@@ -1,13 +1,15 @@
 import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
+
 import { Button } from '@/components/atoms/Button'
 import { TextField } from '@/components/atoms/FormElements/TextField'
 import { FormContainer } from '@/components/bosons/FormContainer'
-import toastService from '@/services/toast.service'
+import { toastService } from '@/services/toast.service'
+import { zodResolver } from '@hookform/resolvers/zod'
+
 import formSchema, { FormInputs } from './form.schema'
 import * as S from './styles'
 
-export const {{formName}}Form = () => {
+export const {{componentName}}Form = () => {
   const {
     register,
     handleSubmit,
